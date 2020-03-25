@@ -1,4 +1,4 @@
-<style>
+
 ol {
 
 list-style: none; 
@@ -8,4 +8,3 @@ li:before {
 counter-increment: li; 
 content: counters(li,".") ". "; 
 }
-</style>
