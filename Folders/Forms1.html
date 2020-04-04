@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+        Forms1
+        </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <fieldset>
+            <legend>
+                Info about user
+            </legend>
+            <form name="users">
+                <p>Your name: 
+                    <input type="text" name="userName" size="30">
+                </p>
+                <p>
+                    Your age: 
+                    <input type="text" name="userAge" list="age">
+                    <datalist id="age">
+                        <option value="1-10  years">
+                        <option value="11-16  years">
+                        <option value="17-22  years">
+                        <option value="23-35  years">
+                        <option value="35-45  years">
+                        <option value="Over 45  years">
+                    </datalist>
+                </p>
+                <p>
+                    Which OS do you use? 
+                        <select name="OS">
+                            <option value="1"> Windows</option>
+                            <option value="2"> LInux</option>
+                            <option value="3"> MacOS</option>
+                            <option value="4"> FreeBSD</option>
+                            <option value="4"> Others</option>
+                        </select>
+                </p>
+                <p>
+                    Which browsers do you use? <br>
+                    <label>
+                        <input type="checkbox" name="IE" value="1">Internet Explorer
+                    </label>
+                    <label>
+                        <input type="checkbox" name="GC" value="2">Google Chrome
+                    </label>
+                    <label>
+                        <input type="checkbox" name="FF" value="3">FireFox
+                    </label>
+                    <label>
+                        <input type="checkbox" name="O" value="4">Opera
+                    </label>
+                    <label>
+                        <input type="checkbox" name="O" value="5">Others
+                    </label>
+                </p>
+                <p>
+                    Does your work connected with computer? <br>
+                    <label><input type="radio" name="comp" value="1">Yes</label>
+                    <label><input type="radio" name="comp" value="1">No</label>
+                    <label><input type="radio" name="comp" value="1">I don't know</label>
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Delete">
+                </p>
+                <p>
+                    Additional Info:<br>
+                    <textarea name="add_info" cols="50" rows="8"></textarea>
+                </p>
+            </form>
+        </fieldset
+    </body>
+    </html>
