@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Form1</title>
+        <meta charset="utf">
+    </head>
+    <body>
+    	<fieldset>
+    		<h2>Запись на курсы</h2>
+    		<br>
+    		<hr>
+    		<br>
+    		<form name="courses">
+    			<p>
+    				Имя:<br>
+    				<input type="text" name="UserName" size="30" value="Алексей" required>
+    			</p>
+    			<br>
+    			<p>
+    				Язык программирования:<br>
+    				<label><input type="radio" name="C++" value="1">C++</label><br>
+    				<label><input type="radio" name="PHP" value="2" checked>PHP</label><br>
+    				<label><input type="radio" name="Python" value="3">Python</label>
+    			</p>
+    			<p>
+    				Дополнительная информация:<br>
+    				<textarea cols="50" rows="5" name="ExtraInfo">Есть опыт программирования на С++</textarea>
+    			</p>
+    			<br>
+    			<p>
+    				Секретное слово:<br>
+    				<input type="password" name="Password" size="30" value="********" required><br>
+    				<input type="submit" formaction="URL">
+    				<input type="reset" value="Очистить">
+    			</p>
+  			</form>
+  		</fieldset>
+    </body>
+ </html>

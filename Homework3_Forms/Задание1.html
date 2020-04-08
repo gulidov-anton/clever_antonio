@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <title>TASK1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Регистрационная форма пользователя</legend>
+            <form name="RegistrationOfUser">
+                <br>
+                <p>
+                    Имя: 
+                    <input type="text" name="UserName" size="20">
+                </p>
+                <p>
+                    Укажите возраст: 
+                    <input type="text" name="userAge" list="UserAge">
+                    <datalist id="UserAge">
+                        <option value="10-15 лет">
+                        <option value="15-20 лет">
+                        <option value="20-30 лет">
+                        <option value="30-40 лет">
+                        <option value="Старше 40 лет">
+                    </datalist>
+                </p>
+                <p>
+                    Укажите пол:
+                    <label><input type="radio" name="Male" value="1">Мужской</label>
+                    <label><input type="radio" name="Female" value="2">Женский</label>
+                </p>
+                <p>
+                    Страна проживания: 
+                        <select name="Country">
+                            <option value="1"> Беларусь</option>
+                            <option value="2"> Россия</option>
+                            <option value="3"> Украина</option>
+                            <option value="4"> Польша</option>
+                            <option value="5"> Литва</option>
+                            <option value="6"> Латвия</option>
+                            <option value="7"> Другие</option>
+                        </select>
+                </p>
+                <p>
+                    Владение языками
+                    <label><input type="checkbox" name="Rus" value="1">Русский</label>
+                    <label><input type="checkbox" name="Bel" value="2">Белорусский</label>
+                    <label><input type="checkbox" name="Eng" value="3">Английский</label>
+                </p>
+               <p>
+                    Фото профиля:
+                    <input type="file" name="UserFile" value="Обзор...">
+               </p>
+                <p>
+                    Введите логин: 
+                    <input size="20" name="login">
+                </p>
+                <p>
+                    Введите пароль:
+                    <input type="password" maxlength="25" size="20" name="password"> 
+                </p>
+                <p>
+                    Повторите пароль:
+                    <input type="password" maxlength="25" size="20" name="password"> 
+                </p>
+            </form>
+        </fieldset
+            <form>
+                <p>
+                    <input type="reset" value="Сброс">
+                    <input type="submit" formaction="URL">
+                    
+                </p>
+            </form>
+    </body>
+    </html>

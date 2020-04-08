@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Form2</title>
+        <meta charset="utf">
+    </head>
+    <body>
+    	<fieldset>
+            <legend>
+                <font size="5">Параметры автомобиля</font>
+            </legend>
+    		<br>
+    		<form name="auto">
+    			<p>
+    				Марка автомобиля:
+    				<input type="text" name="AutoMark" size="30">
+    			</p>
+    			<p>
+    				Обьём двигателя, см<SUP>3</SUP>:
+    				<input type="text" name="Volume" size="50" value="1900">
+    			</p>
+                <p>
+                    Область:
+                    <select name="Region">
+                        <option value="7">Брестская </option>
+                        <option value="1">Минск </option>
+                        <option value="2">Минская </option>
+                        <option value="3">Витебская </option>
+                        <option value="4">Могилевская </option>
+                        <option value="5">Гомельская </option>
+                        <option value="6">Гродненская </option>
+                    </select>
+                </p>
+                <p>
+                    Тип КПП:<br>
+                    <label><input type="radio" name="Auto" value="1">Автомат</label><br>
+                    <label><input type="radio" name="Mechanic" value="1">Механика</label><br>
+                </p>
+                <p>
+                    Двигатель:<br>
+                    <label><input type="checkbox" name="Electro" value="1"> Электро</label><br>
+                    <label><input type="checkbox" name="Diesel" value="2"> Дизель</label><br>
+                    <label><input type="checkbox" name="Benzin" value="1"> Бензин</label><br>
+                    <label><input type="checkbox" name="Propan_Butan" value="1"> Пропан-Бутан</label><br>
+                    <label><input type="checkbox" name="Metan" value="1"> Метан</label><br>
+                </p>
+    			<p>
+    				Описание:<br>
+    				<textarea cols="50" rows="10" name="extraInfo"></textarea>
+    			</p>
+    			<p>
+    				<input type="submit" formaction="URL">
+    				<input type="reset" value="Очистить">
+    			</p>
+  			</form>
+  		</fieldset>
+    </body>
+ </html>
