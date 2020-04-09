@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Forms2</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script src="form2.js"></script>
+        <h1 align="center">Questionary</h1>
+        <form name="users">
+            <table border="1" bordercolor="blue" cellspacing="0" cellpadding="5" align="center" width="800">
+                <tr>
+                    <td>Surname</td>
+                    <td><input type="text" name="surname" size="70"></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" size="70"></td>
+                </tr>
+                <tr>
+                    <td>Middle Name</td>
+                    <td><input type="text" name="middle_name" size="70"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">About myself I can tell such information:</td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td>
+                        <label><input type="radio" name="sex" value="1">Male</label><br>
+                        <label><input type="radio" name="sex" value="2">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birth date</td>
+                    <td><input type="date" name="date_of_birth" size="70"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" min="18" max="63" name="age" size="70"></td>
+                </tr>
+                <tr>
+                    <td>Living address</td>
+                    <td><input type="text" name="address" size="70"></td>
+                </tr>
+                <tr>
+                    <td>Phone number</td>
+                    <td>+375<input type="tel" name="phone_number" size="65"></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="text" name="email" size="70"></td>
+                </tr>
+                <tr>
+                    <td>Education</td>
+                    <td>
+                        <label><input type="radio" name="education" value="1">General</label><br>
+                        <label><input type="radio" name="education" value="2">College</label><br>
+                        <label><input type="radio" name="education" value="3">University</label><br>
+                        <label><input type="radio" name="education" value="4">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td><input type="text" name="profession" size="70"></td>
+                </tr>
+                <tr>
+                    <td>Experience</td>
+                    <td>
+                        <select name="experience">
+                            <option value="1"> Less than 1 year</option>
+                            <option value="2"> 1-3 years</option>
+                            <option value="3"> 3-5 years</option>
+                            <option value="4"> 5-15 years</option>
+                            <option value="5"> More than 15 years</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last job</td>
+                    <td><input type="text" name="prior_work" size="70"></td>
+                </tr>
+                <tr>
+                    <td>Last job period</td>
+                    <td>
+                        from <input type="date" name="data1"> 
+                        to <input type="date" name="data2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="reset" value="Delete">
+                        <input type="button" value="Send" onclick="checkForm()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
