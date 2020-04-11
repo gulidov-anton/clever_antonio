@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+        EXAM4.Forms.
+        </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<h1>Заполните анкету</h1>
+    	<br>
+    	<form name="anketa">
+    		<p><strong><big>Город, в котором я хочу работать:</big></strong>
+    			<select name="desired_city">
+                            <option value="1"> Минск</option>
+                            <option value="2"> Витебск</option>
+                            <option value="3"> Могилев</option>
+                </select>
+            </p>
+  
+    		<p>
+    			<strong><big>Меня зовут*</big></strong><br>
+    		</p>
+    		<p>
+    			<input type="text" name="userName" value="Имя" required>
+    			<input type="text" name="userSurname" value="Фамилия" required>
+    		</p>
+    		<p>
+    			<strong><big>Год, месяц, дата рождения</big></strong><br>
+    		</p>
+    		<p>
+    			<input type="date" name="date_of_birth">
+    		</p>
+    		<p>
+    			<strong><big>Сейчас я проживаю в городе</big></strong>
+    			<input type="text" name="currentCity">
+    			<strong><big>по адресу</big></strong>
+    			<input type="text" name="address">
+    		</p>
+    		<p>
+    			<strong><big>Мой контактный телефон</big></strong><br>
+    			<input type="text" name="phone_number">
+    		</p>
+    		<p>
+    			<strong><big>Образование*</big></strong><br>
+    			<label><input type="radio" name="edu" value="1">Высшее</label><br>
+                <label><input type="radio" name="edu" value="2">Среднее-специальное</label><br>
+                <label><input type="radio" name="edu" value="3">Профессионально-техническое</label><br>
+                <label><input type="radio" name="edu" value="3">Среднее</label>
+    		</p>
+    		<p>
+    			<strong><big>Занятость в настоящее время</big></strong><br>
+    			<label><input type="checkbox" name="work" value="1">Работаю</label><br>
+                <label><input type="checkbox" name="work" value="2">Учусь</label><br>
+                <label><input type="checkbox" name="work" value="3">Не занят</label>
+    		</p>
+    		<p>
+    			<input type="submit" value="Отправить">
+    		</p>
+    	</form>
+    </body>
+</html>
