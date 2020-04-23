@@ -1,20 +1,26 @@
-* {
+Все элементы:
+*  {
   margin:0;
   padding:0;
 }
-h2 { color:green;
+
+Селектор элемента:
+h2 ( { color:green;
   font-family:"times new roman" ;
 }
 p{color:blue;}
 
+Селектор класса:
 .red {
   color:red;
 }
 
+Селектор идентификатора:
 #violet {
   background-color:violet;
 }
 
+Контекстный селектор:
 div table p {
   color:purple;
 }
@@ -23,4 +29,5 @@ table {
   border:1px solid black;
 }
 
+Селектор дочерних элементов:
 td>p{color:orange;}
