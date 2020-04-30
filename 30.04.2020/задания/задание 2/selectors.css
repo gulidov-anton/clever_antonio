@@ -1,0 +1,21 @@
+h1{
+    padding: 20px;
+    background-color: #dddddd;
+    font-size: 28pt;
+}
+
+p:nth-of-type(2){
+    font-weight: bold;
+}
+
+a[href^="#"]{
+    font-size: 16pt;
+    font-weight: bold;
+    color: #777777;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+a[href^="#"]:hover{
+    color: #1d0d77;
+}
