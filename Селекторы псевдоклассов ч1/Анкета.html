@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Anketa</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<h1>Анкета</h1>
+    	<br>
+    	<form name="anketa">
+    		<table>
+    			<tr>
+    				<td>
+    					Фамилия:
+    				</td>
+    				<td>
+    					<input type="text" name="UserSurname" size="30" required>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					Имя:
+    				</td>
+    				<td>
+    					<input type="text" name="UserName" size="30" required>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					Отчество:
+    				</td>
+    				<td>
+    					<input type="text" name="UserMiddleName" size="30">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					Пол:
+    				</td>
+    				<td>
+    					<label><input type="radio" name="male" value="1">Мужской</label><br>
+    					<label><input type="radio" name="female" value="2" checked>Женский</label><br>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    				Дата рождения:
+    				</td>
+    				<td>
+    					<input type="date" name="BirthDate" size="30" required>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					Владею языками:
+    				</td>
+    				<td>
+    					<label><input type="checkbox" name="language" value="1" checked>Белорусский</label><br>
+                		<label><input type="checkbox" name="language" value="2" checked>Русский</label><br>
+                		<label><input type="checkbox" name="language" value="3" checked>Английский</label><br>
+                		<label><input type="checkbox" name="language" value="3">Китайский</label>
+    				</td>
+    			</tr>
+                <tr>
+                    <td>
+                        Адрес места жительства (пребывания):
+                    </td>
+                    <td>
+                        <input type="text" name="Address" size="30"
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="submit" value="Отправить">
+                    </td>
+                </tr>
+    		</table>
+    	</form>
+    </body>
+</html>
