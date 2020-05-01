@@ -5,3 +5,11 @@ h1{
 input[type="text"]:focus{
 	box-shadow: 0px 0px 10px orange;
 }
+
+
+input[type="date"]:focus,
+input[type="checkbox"]:focus,
+input[type="submit"]:focus
+{
+	box-shadow: none;
+}
