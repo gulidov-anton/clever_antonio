@@ -1,0 +1,12 @@
+.boxshadow {
+    position: relative;
+    width: 350px;
+    padding: 30px;
+    font-family: 'bookman old style';
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 30px;
+    background: linear-gradient(to right, #fff, #eee, #fff);
+}
