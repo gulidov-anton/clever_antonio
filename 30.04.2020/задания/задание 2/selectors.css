@@ -3,9 +3,11 @@ padding:20px;
 background-color:#dddddd;
 font-size:28pt;
 }
+
 p:nth-of-type(2) {
     font-weight: bold;
 }
+
 a[href^="#"] {
     font-size:16pt;
     font-weight:bold;
@@ -13,30 +15,35 @@ a[href^="#"] {
     margin-left:20px;
     text-decoration: none;
 }
+
 a[href^="#"]:hover {
     color: #1d0d77;
 }
+
 h2 {
     padding:10px;
     background-color:#dddddd;
 }
-h2:first-of-type{
- color: #2d4764;
- border: 1px dotted #444;
- 
+
+h2:first-of-type {
+    color: #2d4764;
+    border: 1px dotted #444;
 }
-h2:last-of-type{
+
+h2:last-of-type {
     color: #3e337a;
     border: 3px double #444;
-   }
-h2:nth-of-type(2){
+}
+
+h2:nth-of-type(2) {
     color: #345375;
     border: 1px dashed #444;
-    
-   }  
+}
+
 h2 {
     font-size:20pt;
 }
+
 h3 {
 margin-left:40px;
 }
