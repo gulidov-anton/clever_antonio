@@ -10,3 +10,36 @@
     margin: 30px;
     background: linear-gradient(to right, #fff, #eee, #fff);
 }
+
+.boxshadow::before {
+    content: " ";
+    display: block; /*Отображается как блочный элемент*/
+    position: absolute; /*Абсолютное позиционирование блока*/
+    width: 92%; /*Ширина*/
+    height: 67%; /*Высота*/
+    top: 0px; /*Смещение сверху*/
+    left: 0px; /*Смещение слева*/
+    right: 0px; /*Смещение справа*/
+    bottom: 0px; /*Смещение снизу*/
+    margin: auto; /*Отступы*/
+    box-shadow: 0px 5px 20px rgbba(0, 0, 0, 0.7); /*Тень блока*/
+    z-index: -1; /*Задает размещение по z-оси ниже блока*/
+    transform: rotate(5deg); /*поворот на 5 градусов*/ 
+}
+
+.boxshadow::after {
+    content: " ";
+    display: block; /*Отображается как блочный элемент*/
+    position: absolute; /*Абсолютное позиционирование блока*/
+    width: 92%; /*Ширина*/
+    height: 67%; /*Высота*/
+    top: 0px; /*Смещение сверху*/
+    left: 0px; /*Смещение слева*/
+    right: 0px; /*Смещение справа*/
+    bottom: 0px; /*Смещение снизу*/
+    margin: auto; /*Отступы*/
+    box-shadow: 0px 5px 20px rgbba(0, 0, 0, 0.7); /*Тень блока*/
+    z-index: -1; /*Задает размещение по z-оси ниже блока*/
+    ransform: rotate(5deg); /*поворот на 5 градусов*/
+    transform: rotate(-5deg); /*поворот на -5 градусов*/ 
+}
