@@ -7,8 +7,8 @@
 </head>
 
 <body>
-	<h2>Данные о клиенте</h2>
-	<table border="1" cellspacing="0" cellpadding="0">
+	<table>
+		<caption>Данные о клиенте</caption>
 		<tr>
 			<td colspan="2 ">
 				<center>Основные данные:</center>
@@ -19,7 +19,7 @@
 				Фамилия
 			</td>
 			<td>
-				Поле
+				<input type="text" name="UserSurName" required>
 			</td>
 		</tr>
 		<tr>
@@ -27,7 +27,7 @@
 				Имя
 			</td>
 			<td>
-				Поле
+				<input type="text" name="UserName" required>
 			</td>
 		</tr>
 		<tr>
@@ -35,7 +35,7 @@
 				Отчество
 			</td>
 			<td>
-				Поле
+				<input type="text" name="UserFatherName" required>
 			</td>
 		</tr>
 		<tr>
@@ -43,7 +43,7 @@
 				Дата рождения
 			</td>
 			<td>
-				Поле
+				<input type="date" name="BirthDate">
 			</td>
 		</tr>
 		<tr>
@@ -51,7 +51,7 @@
 				Комментарий
 			</td>
 			<td>
-				Поле
+				<textarea name="ExtraInfo"></textarea>
 			</td>
 		</tr>
 		<tr>
@@ -64,7 +64,7 @@
 				Адрес:
 			</td>
 			<td>
-				Поле
+				<input type="text" name="Adress">
 			</td>
 		</tr>
 		<tr>
@@ -72,7 +72,7 @@
 				Телефон:
 			</td>
 			<td>
-				Поле
+				<input type="tel" name="Tel"pattern="+375[0-9]{2}-[0-9]{3}-[0-9]{4}" required>
 			</td>
 		</tr>
 		<tr>
@@ -80,7 +80,7 @@
 				E-mail:
 			</td>
 			<td>
-				Поле
+				<input type="email" name="email">
 			</td>
 		</tr>
 		<tr>
@@ -88,7 +88,12 @@
 				Получить рассылку:
 			</td>
 			<td>
-				Поле
+				<label><input type="checkbox" name="Yes" value="1"></label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2 ">
+				<center>Обязательные для заполнения поля выделены красным</center>
 			</td>
 		</tr>
 </body>

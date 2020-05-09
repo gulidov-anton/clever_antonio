@@ -1,0 +1,38 @@
+table {
+	width: 700px;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+td {
+	border: 1px solid #777;
+	padding: 7px;
+	background-color: #f0f8ff;
+}
+
+input[type="text"],
+textarea {
+	width: 450px;
+}
+
+input:required {
+	border: 1px solid #ff0000;
+	box-shadow: 0px 0px 3px #ff0000;
+}
+
+caption {
+	border: 1px solid #000080;
+	box-shadow: 0px 0px 3px #ff0000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+td:only-of-type {
+	text-align: center;
+	font-weight: bold;
+}
+
+tr:last-child > td {
+	color: #FF0000;
+	font-weight: normal;
+}
