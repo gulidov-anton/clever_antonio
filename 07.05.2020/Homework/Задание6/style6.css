@@ -1,0 +1,31 @@
+div {
+	width: 400px;
+	padding: 7px;
+	margin: 4em;
+}
+
+#a {
+	color: #008000;
+	font-size: 2.8em;
+	font-weight: bold;
+}
+
+#b {
+	color: #FFA500;
+	font-size: 2.2em;
+	font-weight: bold;
+}
+
+#c {
+	font-size: 1.2em;
+}
+
+span.i {
+	text-decoration: underline double;
+	font-style: italic;
+}
+
+span.b {
+	font-weight: bold;
+	text-decoration: underline yellow dotted;
+}

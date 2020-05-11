@@ -1,0 +1,19 @@
+#p_1 {
+	margin: 10px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#p_2 {
+	font-size: 25px;
+}
+
+.sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+.sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
