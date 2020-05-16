@@ -1,0 +1,34 @@
+caption {
+  font-weight: bold;
+  font-size: 25px;
+  color: #191970;
+  text-shadow: 1px 1px 2px #4169E1;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 1px 15px;
+}
+
+tr:first-of-type {
+	background: #00008B;
+	color: #FFFAFA;
+}
+
+td:first-of-type {
+	background: #9400D3;
+	color: #FFFAFA;
+}
+
+tr:first-of-type td:nth-of-type(1) {
+	background: #00008B;
+}
+
+
+
+

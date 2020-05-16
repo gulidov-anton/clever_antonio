@@ -1,0 +1,17 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+#t_2 {
+  caption-side: bottom;
+  border-collapse: separate;
+  border-spacing: 5px;
+  empty-cells: hide;
+  box-shadow: 1px 1px 5px grey;
+}
