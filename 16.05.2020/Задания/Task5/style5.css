@@ -1,0 +1,19 @@
+div {
+  margin: 20px 20px;
+  padding: 10px;
+  width: 280px;
+  background-color: #98FB98;
+  height: 20vh;
+  border: 2px solid #228B22;
+  border-radius: 5px;
+  position: relative;
+ }
+
+ div::before {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  border: 30px solid transparent;
+  border-top: 30px solid #228B22;
+ }
