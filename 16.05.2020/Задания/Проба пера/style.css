@@ -1,0 +1,7 @@
+#content {
+	width: 0;
+	height: 0;
+	padding: 0px;
+	border: 30px solid transparent;
+	border-bottom-color: blue;
+}
