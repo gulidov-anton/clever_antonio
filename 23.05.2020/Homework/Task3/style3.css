@@ -1,0 +1,15 @@
+* {
+	margin: 20px;
+	background: 
+}
+
+button {
+  background: #006400;
+  width: 300px;
+  height: 100px;
+  font-size: 25px;
+  font-family: calibri;
+  box-shadow: 20px 20px 5px -5px #8B0000;
+  border-radius: 8px;
+  word-spacing: 10px;
+}
