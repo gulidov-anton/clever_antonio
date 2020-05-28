@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front-end разработчик | Clevertec</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/smtp.js"></script>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151666808-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151666808-1');
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(56102839, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+    <div><img src="https://mc.yandex.ru/watch/56102839" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/vacancy.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="preheader full-width">
+            <div class="content">
+                <a href="tel:+7 499 653 94 51" class="contact phone">+7 (499) 653 94 51</a>
+                <a href="tel:+375 29 153 94 51" class="contact phone">+375 (29) 153 94 51</a>
+                <a href="mailto:info@clevertec.ru" class="contact mail" id="mail-link">info@clevertec.ru</a>
+                <!-- <div class="contact language-container">
+                    <a href="#" class="language ru active" id="lang-ru-button" data-reload>RU</a>
+                    <a href="#" class="language en" id="lang-en-button" data-reload>EN</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="main-header full-width">
+            <div class="content">
+                <div>
+                    <a class="logo" id="logo" href="../index.html">
+                        <img src="../images/logo.svg" alt="CLEVERTEC">
+                        <span class="logo-text">CLEVERTEC</span>
+                    </a>
+                </div>
+                <nav class="main-menu">
+                    <div class="menu-hamburger-btn" id="menu-button">
+                        <div class="lines-wrap">
+                            <span class="menu-btn-line"></span>
+                            <span class="menu-btn-line"></span>
+                            <span class="menu-btn-line"></span>
+                        </div>
+                    </div>
+                    <ul class="menu-container">
+                        <li class="menu-item">
+                            <a href="../cases/cases.html" class="menu-link" id="menu-link">Кейсы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="../products/products.html" class="menu-link" id="menu-link">Продукты</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="vacancies.html" class="menu-link link-active" id="menu-link">Вакансии</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="../study/study.html" class="menu-link desktop-menu-link" id="menu-link">Обучение</a>
+                        </li>
+                        <a href="../contact_us/contact_us.html">
+                            <li class="menu-item form-link">
+                                <span class="menu-link desktop-menu-link" id="menu-link">Связаться</span>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul class="menu-container">
+                <a href="../cases/cases.html">
+                    <li class="menu-item">
+                        <span class="menu-link" id="menu-link">Кейсы</span>
+                    </li>
+                </a>
+                <a href="../products/products.html">
+                    <li class="menu-item">
+                        <span class="menu-link" id="menu-link">Продукты</span>
+                    </li>
+                </a>
+                <a href="vacancies.html">
+                    <li class="menu-item">
+                        <span class="menu-link" id="menu-link">Вакансии</span>
+                    </li>
+                </a>
+                <a href="../study/study.html">
+                    <li class="menu-item">
+                        <span class="menu-link" id="menu-link">Обучение</span>
+                    </li>
+                </a>
+                <a href="../contact_us/contact_us.html">
+                    <li class="menu-item mobile-menu-link">
+                        <span class="menu-link" id="menu-link">Связаться</span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="success-send-mail-block">
+        <div class="content">
+            <div class="succes-send-mail">
+                <div class="success-title-wrap">
+                    <img src="../images/success.svg" class="success" alt="">
+                    <span class="title">Письмо отправлено</span>
+                </div>
+                <img src="../images/icon_close.svg" class="close" alt="">
+            </div>
+        </div>
+    </div>
+    <main class="main-content">
+        <section class="full-width vacancy-section">
+            <div class="content vacancy">
+                <div class="back-vacancies">
+                    <a class="link-back " href="vacancies.html">
+                        <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.03527 7.99989L10.8332 13.7978C10.9113 13.8759 10.9113 14.0025 10.8332 14.0806L8.99471 15.9191C8.91661 15.9972 8.78997 15.9972 8.71187 15.9191L0.93405 8.14131C0.855945 8.0632 0.855945 7.93657 0.93405 7.85846L8.71187 0.0806475C8.78997 0.0025425 8.91661 0.0025425 8.99471 0.0806475L10.8332 1.91913C10.9113 1.99723 10.9113 2.12386 10.8332 2.20197L5.03527 7.99989Z"
+                                fill="#0D0525" />
+                        </svg> К списку вакансий</a>
+                </div>
+                <a class="vacancy-title">Системный аналитик</a>
+                <div class="vacancy-level">Middle&nbsp;&nbsp;|&nbsp;&nbsp;Гомель, Минск (РБ)&nbsp;&nbsp;|&nbsp;&nbsp;Белгород (РФ)</div>
+                <div class="vacancy-containers" style="margin-top: 24px;">
+                    <div class="text-container">
+                        <div class="vacancy-responsibility">
+                            <h2 class="vacancy-responsibility-title">Обязанности:</h2>
+                            <ul class="vacancy-text">
+                                <li class="item-list">Работа в команде вместе с представителями заказчика по Agile.</li>
+                                <br>
+                                <li class="item-list">Системный анализ бизнес-требований.</li>
+                                <br>
+                                <li class="item-list">Разработка функциональных требований.</li>
+                                <br>
+                                <li class="item-list">Проектирование сервисов.</li>
+                            </ul>
+                        </div>
+                      
+                        <div class="vacancy-requirements">
+                            <h2 class="vacancy-requirements-title vacancy-responsibility-title">Требования:</h2>
+                            <ul class="vacancy-text">
+                                <li class="item-list">Опыт работы в сфере IT от 2-х лет;</li>
+                                <li class="item-list">Системное мышление</li>
+                                <li class="item-list">Коммуникабельность, навыки управления командой</li>
+                                <li class="item-list">Опыт написания технической документации (бизнес-требований, функциональных требований)</li>
+                                <li class="item-list">Опыт работы с распределёнными системами документирования (Google Docs, Confluence и др.)</li>
+                                <li class="item-list">Понимание основных принципов UX-friendly интерфейсов</li>
+                                <li class="item-list">Понимание принципов построения репозиториев (Git)</li>
+                                <li class="item-list">Понимание трёхуровневой архитектуры приложений (View-BL-Data)</li>
+                                <li class="item-list">Понимание принципов построения клиент-серверных систем</li>
+                                <li class="item-list">Базовое знание протокола HTTP</li>
+                                <li class="item-list">Базовое знание протокола SOAP, понимание WSDL</li>
+                                <li class="item-list">Понимание принципов построения REST-сервисов</li>
+                                <li class="item-list">Знание форматов XML и JSON</li>
+                                <li class="item-list">Понимание принципов agile-разработки</li>
+                            </ul>
+                        </div>
+
+                        <div class="vacancy-welcome">
+                            <h2 class="vacancy-welcome-title vacancy-responsibility-title">Приветствуется:</h2>
+                            <ul class="vacancy-text">
+                                <li class="item-list">Понимание микросервисной архитектуры</li>
+                                <li class="item-list">Опыт работы с Git</li>
+                                <li class="item-list">Понимание принципов работы распределённых систем</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-feedback-content">
+                        <form accept="" class="form-feedback">
+                            <h2 class="form-feedback-title">Откликнуться на вакансию</h2>
+                            <div class="some-form__line">
+                                <input type="text" name="name" class="vacancy-form-input" id="form-name" placeholder="Имя" data-validate>
+                                <div class="some-form__hint" id="required-name">Напишите как вас зовут</div>
+                            </div>
+                            <div class="some-form__line">
+                                <input type="text" name="lastname" class="vacancy-form-input" id="form-lastname" placeholder="Фамилия" data-validate>
+                                <div class="some-form__hint" id="required-lastname">Напишите как вас зовут</div>
+                            </div>
+                            <div class="some-form__line">
+                                <input type="text" name="email" class="vacancy-form-input" id="form-email" placeholder="Email" data-validate>
+                                <div class="some-form__hint" id="required-email">Напишите ваш E-mail</div>
+                            </div>
+                            <div class="message-textarea" id="message-textarea">
+                                <div contenteditable="true" data-text="Расскажите о себе" class="message" id="text-mail" name="message"></div>
+                                <div class="message-file" id="list-file"></div>
+                            </div>
+                            <div class="required-line" id="required-title">Расскажите о себе</div>
+                            <div class="button-block">
+                                <input type="file" name="files" id="files" multiple />
+                                <label for="files" class="add-document">
+                                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6169 8.13127L7.48516 16.263C5.92246 17.8257 3.39102 17.8257 1.82831 16.263C0.265605 14.7003 0.265605 12.1688 1.82831 10.6061L10.6671 1.76731C11.643 0.791501 13.2269 0.791501 14.2027 1.76731C15.1785 2.74312 15.1785 4.32704 14.2027 5.30284L6.77806 12.7275C6.38915 13.1164 5.75275 13.1164 5.36384 12.7275C4.97494 12.3386 4.97494 11.7022 5.36384 11.3133L12.0814 4.59574"
+                                            stroke="#0D0525" stroke-opacity="0.95" stroke-linecap="round" />
+                                    </svg>Загрузить резюме</label>
+                            </div>
+                            <button type="submit" class="form-submit-button" value="submit">Ответить на
+                                вакансию</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="full-width footer-section">
+        <div class="content footer">
+            <div class="footer-text-name">© 2013-2020 Clevertec. Все права защищены.</div>
+            <div class="social-block">
+                <a href="https://ru.linkedin.com/company/clevertec-ru" class="icon-social" target="_blank"><img src="../images/icon_Linkedin_In.svg" alt="Linkedin" class="icon-social-image"></a>
+                <a href="https://www.facebook.com/clevertec.ru" class="icon-social" target="_blank"><img src="../images/fb.svg" alt="Facebook" class="icon-social-image"></a>
+                <a href="https://www.instagram.com/clevertec.ru/" class="icon-social" target="_blank"><img src="../images/icon_Instagram.svg" alt="Instagram" class="icon-social-image"></a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/vacancy.js"></script>
+</body>
+
+</html>
