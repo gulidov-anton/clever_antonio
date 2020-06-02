@@ -1,10 +1,10 @@
 * {
 	margin: 20px;
-	background: 
+  background: #FF0000;
 }
 
 button {
-  background: #006400;
+  background: #006400; 
   width: 300px;
   height: 100px;
   font-size: 25px;
@@ -12,4 +12,13 @@ button {
   box-shadow: 20px 20px 5px -5px #8B0000;
   border-radius: 8px;
   word-spacing: 10px;
+}
+
+button:hover {
+  background: #00FA9A
+}
+
+button:active {
+  background: #00FF00;
+  color: green;
 }

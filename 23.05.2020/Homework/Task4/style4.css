@@ -24,7 +24,7 @@
   float: left;
   color: #006400;
   position: relative;
-  top: 6px;
+  top: 5px;
 }
 
 .div::after {

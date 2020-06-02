@@ -1,5 +1,5 @@
 .div_1 {
-  border: 5px dashed green;
+  border: 5px dashed #008000;
   position: fixed;
   margin-top: 30px;
   margin-left: 35px;
@@ -13,7 +13,7 @@
   height: 50px;
   background: radial-gradient(35px 35px at 10px 10px, #00ffff, #ffffff);
   padding: 5px;
-  border: 2px solid orange;
+  border: 2px solid #FF4500;
   float: left;
 }
 
@@ -22,15 +22,10 @@
   height: 50px;
   background: linear-gradient(45deg, #0000ff, #ffffff);
   padding: 5px;
-  border: 2px dotted red;
+  border: 2px dotted #FF0000;
   float: right;
 }
 
 .div_3:hover {
-  width: 70px;
-  height: 50px;
   background: linear-gradient(45deg, rgba(0, 0, 255, 0.3), #ffffff);
-  padding: 5px;
-  border: 2px dotted red;
-  float: right;
 }
