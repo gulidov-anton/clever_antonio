@@ -41,7 +41,7 @@ nav {
     flex-grow: 1;
     flex-shrink: 1;
 }
-#left-col,, #right-col{
+#left-col, #right-col{
     display: flex;
     flex-direction: column;
     flex-basis: 250px;
@@ -57,7 +57,10 @@ main {
 footer {
     display: flex;
     flex-direction: row;
-    width: ;
+    width: 100%;
+    max-width: 1600px;
+    height: 50px;
+    background-color: red;
 }
 #logo {
     margin-left: 15px;
