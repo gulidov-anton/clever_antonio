@@ -1,0 +1,19 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#XXXX {
+    font-size: 30px;
+}
+
+@media all and (max-width:1400px) {
+    #XXXX {background-color: red;
+    flex-grow: 1;
+    color: white;
+}

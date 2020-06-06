@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        #container {
+            position: relative;
+            margin: 40px auto;
+            width: 250px;
+            height: 250px;
+            background-image: url(1.jpg);
+        }
+        
+        #tape {
+            position: absolute;
+            width: 70px;
+            height: 80px;
+            background: #e00303;
+            line-height: 70px;
+            vertical-align: middle;
+            left: 120px;
+            top: 35px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 0 7px 0 0;
+            z-index: 2;
+        }
+        
+        #tape::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #e00303;
+            transform: scaleY(0.5) rotate(-45deg);
+            top: 55px;
+            left: 10px;
+        }
+        
+        #wrap {
+            position: absolute;
+            left: 115px;
+            top: 35px;
+            width: 20px;
+            height: 12px;
+            background-color: #e00303;
+            border-radius: 0;
+            z-index: 1;
+        }
+        
+        #wrap::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 0px;
+            height: 12px;
+            width: 10px;
+            background-color: #8d0303;
+            border-radius: 5px 5px 0px 0;
+            z-index: 1;
+        }
+        
+        */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="wrap"></div>
+        <div id="tape">50% </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
