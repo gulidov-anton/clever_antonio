@@ -1,0 +1,139 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  max-width: 1600px;
+}
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 1600px;
+  height: 200px;
+  background-color: ;
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: #095c5c;
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  height: 30px;
+  background-color: #4B0082;
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: wheat;
+  font-size: 20px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+#main-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1600px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+}
+#left-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: green;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-basis: 250px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+}
+#bottom-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1600px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+}
+#article1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #00FFFF;
+  align-items: center;
+}
+#article2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #00FFFF;
+  align-items: center;
+}
+#article3 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 250px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #00FFFF;
+  align-items: center;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1600px;
+  height: 80px;
+  background-color: #000080;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  #main-section{
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    background-image: url("img/320.jpg"); 
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  header {
+    background-image: url("img/480.jpg");
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    background-image: url("img/768.jpg");
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  header {
+    background-image: url("img/1024.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    background-image: url("img/1420.jpg");
+  }
+}
