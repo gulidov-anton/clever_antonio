@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+#total
+{display: table-row;
+background-color:#fff;
+border-spacing:0px;
+}
+.day{
+display: inline-block;
+height:180px;
+width:120px;
+
+}
+.header,.footer
+{display:table-cell;
+height:40px;
+width:120px;
+vertical-align:middle;
+text-align:center;
+background-color:#10abc7;
+color:#fff;
+font-size:24px;
+font-weigth:bold;
+}
+.footer{
+background-color: #fff;
+color:#000;}
+.day:hover
+{
+box-shadow: 2px 2px 2px #999,-2px -2px 2px #999;
+}
+.weather
+{
+width:114px;
+}
+</style>
+</head>
+<body>
+<div id="total">
+   <div class="day">
+      <div class="header"> 31.08
+	  </div>
+	  <div class="weather">
+	  <img src="weather-blizzard.jpg">
+	  </div>
+	  <div class="footer">+20°</div>
+   </div>
+   <div class="day">
+      <div class="header"> 01.09
+	  </div>
+	  <div class="weather">
+	  <img src="weather-snow.jpg">
+	  </div>
+	  <div class="footer">-3°</div>
+   </div>
+   <div class="day">
+      <div class="header"> 02.09
+	  </div>
+	  <div class="weather">
+	  <img src="weather-sun.jpg">
+	  </div>
+	  <div class="footer">-10°</div>
+   </div>
+</div>
+</body>
+</html>
