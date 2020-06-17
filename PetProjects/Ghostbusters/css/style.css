@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  color: #363636;
 }
 
 .header {
@@ -51,7 +52,6 @@ body {
   margin-right: 18px;
 }
 
-
 button {
   height: 100%;
   cursor: pointer;
@@ -77,3 +77,62 @@ button {
   border-left: 1px solid #D4D4D4;
 }
 
+.conteiner {
+  max-width: 1130px;
+  margin: auto;
+}
+
+.film {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.film-wrapper {
+  display: flex;
+}
+
+.film-trailer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
+.poster {
+  border-radius: 5px;
+  width: 358px;
+}
+
+.trailer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #D4D4D4;
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  cursor: pointer;
+}
+
+.trailer-button-icon {
+  margin-right: 14px;
+}
+
+.film-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.film-subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  color: #A5A5A5;
+}
+
+.film-discription {
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+  max-width: 514px;
+}
