@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -65,9 +71,11 @@ button {
   background-color: #5671F6;
   padding-left: 50px;
   padding-right: 50px;
+  text-align: center;
 }
 
 .sign-up {
+  display: flex;
   color: #5671F6;
   font-size: 18px;
   line-height: 21px;
@@ -75,6 +83,7 @@ button {
   background-color: white;
   padding-left: 34px;
   border-left: 1px solid #D4D4D4;
+  align-items: center;
 }
 
 .conteiner {
@@ -85,6 +94,7 @@ button {
 .film {
   padding-top: 80px;
   padding-bottom: 80px;
+  border-bottom: 1px solid #D4D4D4;
 }
 
 .film-wrapper {
@@ -125,6 +135,8 @@ button {
 }
 
 .film-subtitle {
+  display: block;
+  margin-bottom: 32px;
   font-size: 18px;
   line-height: 21px;
   color: #A5A5A5;
@@ -135,4 +147,119 @@ button {
   line-height: 150%;
   color: #000000;
   max-width: 514px;
+  margin-bottom: 50px;
+}
+
+.about-film {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.about-text {
+  display: block;
+  margin-right: 40px;
+  margin-bottom: 16px;
+}
+
+.about-text-bold {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #363636;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.film-rating-counter {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #5671F6;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 28px;
+}
+
+.rating-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+.rating-text {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 19px; 
+}
+
+.rating-text-bold {
+  font-weight: bold;
+}
+
+.cast {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #A5A5A5;
+  margin-right: 30px;
+}
+
+.section-title.active {
+  color: #363636;
+  font-weight: 900;
+}
+
+.tabs-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  margin-bottom: 35px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 21px;
+}
+
+.en-name {
+  font-size: 16px;
+  line-height: 19px;
+  color: #A5A5A5;
+}
+
+.name {
+  font-size: 16px;
+  line-height: 19px;
+  color: #5671F6;
+  margin-bottom: 6px;
 }
