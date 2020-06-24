@@ -7,12 +7,14 @@
   <script>
     'use strict'
     let input, sum = 0;
-    while ((input = +prompt('Введите число!')) !== null) {
-      let number = +input; 
-        if (!isNaN(number))
-            sum += number;
+    while(input!==0) {
+      input=+prompt('Введите число!');
+      let number=+input; 
+        if(!isNaN(number)) {
+            sum+=number;
         }
-        alert(sum);
+    }
+    alert(sum);
   </script>
 </head>
 <body>
