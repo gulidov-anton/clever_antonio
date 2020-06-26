@@ -6,21 +6,25 @@
   <title>Task6</title>
   <script>
     'use strict'
-    let number = +prompt("Введите число в диапазоне от 1 до 5");
-   
-    switch(number) {
-        case 1: alert("Плохо");
-        break;
-        case 2: alert("Неудовлетворительно");
-        break;
-        case 3: alert("Удовлетворительно");
-        break;
-        case 4: alert("Хорошо");
-        break;
-        case 5: alert("Отлично");
-        break;
-        default: alert("Введите число от 1 до 5");
-    }
+    let weekDay = +prompt("Введите номер дня недели");
+    let monday="Понедельник", tuesday="Вторник", wednesday="Среда", thursday="Четверг", friday="Пятница", saturday="Суббота", sunday="Воскресенье";
+    switch(weekDay) {
+      case 1: alert(monday+" 1, 8, 15, 22, 29");
+      break;
+      case 2: alert(tuesday+" 2, 9, 16, 23, 30");
+      break;
+      case 3: alert(wednesday+" 3, 10, 17, 24");
+      break;
+      case 4: alert(thursday+" 4, 11, 18, 25");
+      break;
+      case 5: alert(friday+" 5, 12, 19, 26");
+      break;
+      case 6: alert(saturday+" 6, 13, 20, 27");
+      break;
+      case 7: alert(saturday+" 7, 14, 21, 28");
+      break;
+      default: alert("Введите число от 1 до 7");
+    }    
   </script>
 </head>
 <body>
