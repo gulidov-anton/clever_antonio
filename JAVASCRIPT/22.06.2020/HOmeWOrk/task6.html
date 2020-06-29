@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task6</title>
+  <script>
+    'use strict'
+    let ed=0, des=0;
+    let num = prompt("Введите целое положительное число");
+    for(let i=10;i<100;i++) {
+      ed=i%10;
+      des=(i-ed)/10;
+      if((ed+des)%num==0) {
+        console.log(i);
+      }
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>

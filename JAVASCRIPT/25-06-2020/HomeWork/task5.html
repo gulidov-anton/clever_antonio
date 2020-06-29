@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task5</title>
+  <script>
+    'use strict'
+    let N = +prompt("Введите номер системы исчисления: 1 – дециметр, 2 – километр, 3 – метр, 4 – миллиметр, 5 – сантиметр");
+    let L = +prompt("Введите длинну отрезка в вышеуказанных единицах");
+   
+    switch(N) {
+        case 1: alert("В метрах это будет "+L/10);
+        break;
+        case 2: alert("В метрах это будет "+L*1000);
+        break;
+        case 3: alert("В метрах это будет "+L);
+        break;
+        case 4: alert("В метрах это будет "+L/1000);
+        break;
+        case 5: alert("В метрах это будет "+L/100);
+        break;
+        default: alert("Введите число от 1 до 5");
+    }
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
