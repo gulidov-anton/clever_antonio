@@ -6,10 +6,13 @@
   <title>Task5</title>
   <script>
    'use strict'
-    let radius = prompt("Enter the circle radius");
     const PI = 3.14;
-    let circleLenghth = 2*PI*radius;
+   	function CircleLenghth (r) {
+   		return(2*PI*r);
+   	}
+    let radius = prompt("Enter the circle radius");
     
+    alert(CircleLenghth(radius));
   </script>
 </head>
 <body>
