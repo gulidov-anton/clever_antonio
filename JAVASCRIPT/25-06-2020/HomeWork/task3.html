@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task3</title>
+  <script>
+    'use strict'
+    let date = new Date();
+    let h= date.getHours();
+    let name = prompt("Hello! What's your name?");
+   
+    switch(h) {
+
+        case 24:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5: alert(name+" Good night");
+        break;
+        case 6: 
+        case 7: 
+        case 8: 
+        case 9: 
+        case 10: 
+        case 11: alert(name+" Good morning");
+        case 12:
+        case 13:
+        case 14:
+        case 15:
+        case 16:
+        case 17: alert(name+" Good afternoon");
+        break;
+        case 18:
+        case 19:
+        case 20:
+        case 21:
+        case 22:
+        case 23: alert(name+" Good evening");
+        default: alert("Mistake");
+    }
+  </script>
+</head>
+<body>
+    
+</body>
+</html>

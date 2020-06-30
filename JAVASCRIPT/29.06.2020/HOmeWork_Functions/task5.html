@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task5</title>
   <script>
-    'use strict'
-    let x = prompt("Введите любое положительное число");
-    for(let i=1;i<=x;i++) {
-      if(x%i==0) {
-       console.log(i);
-      }
-    }
+   'use strict'
+    const PI = 3.14;
+   	function CircleLenghth (r) {
+   		return(2*PI*r);
+   	}
+    let radius = prompt("Enter the circle radius");
+    
+    alert(CircleLenghth(radius));
   </script>
 </head>
 <body>
+    
 </body>
 </html>
