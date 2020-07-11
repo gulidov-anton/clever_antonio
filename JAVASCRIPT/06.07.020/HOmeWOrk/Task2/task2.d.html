@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+  <script>
+   'use strict'
+    function averageSalary() {
+      let sum = 0;
+      let count = 0;
+      for(let key in salary) {
+        sum += salary[key];
+      }
+      for(let key in salary) {
+        count += 1;
+      }
+      return( sum/count );
+    }
+   let salary = {
+    Ivanov: 1000,
+    Petrov: 1000,
+    Sidorov: 1200,
+    Stalin: 3000,
+    Lenin: 3200,
+    Putin: 6000,
+    Pushkin: 9000,
+   }
+    let count = 0;  
+    let aveSal = averageSalary();
+  alert( "Average salary is: " + aveSal );
+
+  for(let key in salary) {
+  if(aveSal <= salary[key]) {
+      count += 1
+    }
+  }
+  alert( count );
+
+  
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
