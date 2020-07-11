@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task3</title>
+  <script>
+    "use striсt";
+    let price = +prompt("Введите цену");
+    while ( isNaN(price) || price < 0 ) {
+      alert("Ошибка! Введите цену покупки > 0");
+      price = +prompt("Введите цену");
+    };
+    let amount = +prompt("Введите сумму внесенную в кассу");
+    while ( isNaN(amount) || amount < 0 ) {
+      alert('Вы ввели неправильное значение. Введите натуральное число, до сотых долей!');
+      amount = +prompt('Введите сумму внесенную в кассу. До копеек.');
+    };
+
+    let showOk = function() {
+      alert("Сдача с покупки составляет " + (amount-price));
+    };
+
+    let showCancel = function () {
+      alert("Недостаточная сумма для оплаты");
+    };
+
+    function ask( question, yes, no ) {
+      (amount >= price) ? yes() : no();
+    }
+
+    ask( "", showOk, showCancel );
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

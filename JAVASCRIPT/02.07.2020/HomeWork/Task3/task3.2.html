@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task3.1</title>
+  <script>
+    'use strict'
+    let calcFactorial = a => {
+      let div = 1;
+      for (; a > 1; a--) {
+        div *= a
+      }
+      return div;
+    };
+
+    let var1 = +prompt("Enter the 1st possitive number");
+    while (isNaN(var1) || var1 <= 0) {
+      alert("You enter the string, char or neggative number or Zero - It's a mistake. The number must be natural");
+      var1 = +prompt("Enter the 1st possitive number");
+    }
+
+    alert(calcFactorial(var1));
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
