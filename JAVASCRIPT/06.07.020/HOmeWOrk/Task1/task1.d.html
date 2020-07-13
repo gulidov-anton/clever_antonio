@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+  <script>
+   'use strict'
+    let person = {
+        surname: "Ivanov",
+        name: "Ivan",
+        'middle name': "Ivanovich",
+        birthYear: 1956,
+        occupation: "software developer",
+        profession: "senior",
+        workYears: 35,
+    }
+    let personCopy = {
+        surnameCopy: person.surname,
+        nameCopy: person.name,
+        birthYearCopy: person.birthYear,
+    }
+
+    delete person["middle name"];
+
+    if(!(['middle name'] in person)) {
+            alert ("NO middle name");
+        } else {
+            alert(person['middle name'])
+        }
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
