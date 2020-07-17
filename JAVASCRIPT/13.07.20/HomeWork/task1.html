@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset = "UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Task1</title>
+  	<script type="text/javascript">
+  	  let diagonal = prompt("Enter the monitor diagonal in inches");
+
+  	  while( isNaN(diagonal) ) {
+  	  	alert("Please, use numbers.");
+  	  	diagonal = prompt("Enter the monitor diagonal in inches");
+  	  }
+
+  	  alert ( "The result in santimeters is: " + fromInchesToSantimeters(diagonal));
+
+  	  function fromInchesToSantimeters(diagonal) {
+  	  	let result = diagonal*2.54;
+  	  	return ( result.toFixed(2) + " inches" ); 
+  	  }
+  	</script>
+  </head>
+  <body>
+
+  </body>
+</html>
