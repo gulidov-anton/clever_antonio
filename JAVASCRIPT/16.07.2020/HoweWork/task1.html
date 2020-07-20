@@ -7,14 +7,14 @@
   </head>
   <body>
     <script type="text/javascript">
-      fruits = ["Яблоко", "Апельсин", "Слива"];               //Создание массива fruits;
+      let fruits = ["Яблоко", "Апельсин", "Слива"];               //Создание массива fruits;
       fruits.push("Абрикос");                                 //Добавление в конец массива значение "Абрикос";
       fruits.unshift("Нектарин", "Персик");                   //Добавление в начало массива значений "Нектарин" и "Персик";
       fruits.splice(2,2);                                    //Удаление двух элементов со 2-го индекса;
-      favoriteFruits = [];                                  //Создание нового масива favoriteFruits;
+      let favoriteFruits = [];                                  //Создание нового масива favoriteFruits;
       favoriteFruits = fruits.slice(0, 3);                  //Копирование в новый массив три первых элемента из массива fruits;
-      berries = ["Барабарис", "Виноград", "Годжи"];        //Создание еще одного массива berries[];
-      fruits.concat(berries);                              //Добавление к массиву  fruits  все элементы массива berries;
+      let berries = ["Барабарис", "Виноград", "Годжи"];        //Создание еще одного массива berries[];
+      fruits = fruits.concat(berries);                              //Добавление к массиву  fruits  все элементы массива berries;
       alert( "Длина массива fruits: " + fruits.length );   //???????????????Вывод длины массива  fruits;
       favoriteFruits.forEach((item, index, array) => {    //Вывод  названия  индекса каждого элемента массива favoriteFruits;
       alert( `${item} имеет позицию ${index} в ${array}` );
