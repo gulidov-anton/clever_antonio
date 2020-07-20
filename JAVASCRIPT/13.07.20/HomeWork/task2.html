@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset = "UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Task2</title>
+  	<script type="text/javascript">
+      let sentence = prompt("Enter the sentence, please.");
+      sentenceType(sentence);
+
+      function sentenceType(sentence) {
+        if(sentence[sentence.length - 1] == ".") {
+          alert("This is a narrative sentence.");
+        }
+        else if(sentence[sentence.length - 1] == "!") {
+          alert("This is an exclamatory sentence!");
+        }
+        else if(sentence[sentence.length - 1] == "?") {
+          alert("This is an interrogative sentence?");
+        }
+        else {
+          alert("There is no any sign in the end of the sentence");
+        }
+      }
+  	</script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset = "UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Task3</title>
+  	<script>
+      let target = " ";
+      let pos = 0;
+      count = 0;
+      let sentence = prompt("Enter the sentence, please.");
+
+      while (true) {
+        let foundPos = sentence.indexOf(target, pos);
+        if (target == " "){
+          count += 1
+        }
+        if (foundPos == -1) break;
+        pos = foundPos + 1;
+      }
+
+      alert( "The quantity of sentences : " + count );
+  	</script>
+  </head>
+  <body>
+
+  </body>
+</html>
