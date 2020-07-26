@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset = "UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Task2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let Arr = [2, -15, 12, 83, -29, 111, -6, 22];       //Создайте массив Arr;
+
+      let index3 = Arr.find( item => item > 99 );          //Нахождение индекса трехзначного элемента;
+
+      let element5 = Arr.filter( item => item%5 == 0 );   //Нахождение элемента кратного 5;
+
+      let allPositive = Arr.filter( item => item >= 0 ); //Cоздание нового массива, содержащего все положительные элементы;
+
+      Arr.sort( (a, b) => a - b );                     //Отсортиовали массив Arr по возрастанию;
+
+      Arr = Arr.map(function(item) {        
+        if(item < 0) {
+          item = Math.abs(item);
+        }
+        else {
+          item *= 2;
+        }
+        return item;
+      });    //Преобразование массива Arr: отрицательные значения заменены их модулями, а положительные умножены на 2;
+
+      Arr.sort( (a, b) => b - a );   //Сортировка массива Arr по убыванию;
+
+      Arr.reverse();                //Изменение порядка элементов в Arr на обратный;
+
+      let multiplyResult = Arr.reduce((multiply, item) => multiply * item); //Нахождение произведение элементов массива;
+
+      let arithmeticalMean = Arr.reduce((sum, current) => sum + current) / Arr.length; //Вычислние среднего арифметического элементов массива Arr. 
+    </script>
+  </body>
+</html>
