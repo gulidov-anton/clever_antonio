@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<meta charset = "UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<title>Task3</title>
-  </head>
-  <body>
-    <script>
-      let user = {
-        display:  "1440×900",
-        JavaScript:  "Да",
-        Flash: "32.0",
-        OS: "Windows8",
-      };
 
-      let {display, OS, browser = "Google chrome"} = user;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task3</title>
+</head>
 
-      keys = Object.keys(user); //Создал массив ключей обьекта user, для отображения в alert'ах
+<body>
+  <script>
+    let user = {
+      display: "1440×900",
+      JavaScript: "Да",
+      Flash: "32.0",
+      OS: "Windows8",
+    };
 
-      alert( keys[0] + ": " + display );
-      alert( keys[3] + ": " + OS );
-      alert( "Browser: " + browser );
-    </script>
-  </body>
+    let { display, OS, browser = "Google chrome" } = user;
+
+    keys = Object.keys(user); //Создал массив ключей обьекта user, для отображения в alert'ах
+
+    alert(keys[0] + ": " + display);
+    alert(keys[3] + ": " + OS);
+    alert("Browser: " + browser);
+  </script>
+</body>
+
 </html>

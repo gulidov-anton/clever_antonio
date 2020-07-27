@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<meta charset = "UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<title>Task1</title>
-  </head>
-  <body>
-    <script>
-      let Experience = {
-      	Umnov: 1,
-      	Ivanov: 2,
-      	Petrov: 15,
-      	Sidorov: 23,
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+</head>
+
+<body>
+  <script>
+    let experience = {
+      Umnov: 1,
+      Ivanov: 2,
+      Petrov: 15,
+      Sidorov: 23,
+    }
+
+    let values = Object.values(Experience);
+
+    alert(averageWorkingYears());
+    alert(lower3YearsQuantity());
+    alert(over20YearsQuantity());
+
+    function averageWorkingYears() { //Функция вычисления среднего стажа работы сотрудников
+      let i = 1;
+      let sum = 0;
+      for (let value of values) {
+        sum += value;
+        i++;
       }
+      return sum / i;
+    }
 
-      let values = Object.values(Experience);
-
-      alert( averageWorkingYears() );
-      alert( lower3YearsQuantity() );
-      alert( over20YearsQuantity() );
-
-      function averageWorkingYears() { //Функция вычисления среднего стажа работы сотрудников
-        let i = 1;
-        let sum = 0;
-      	for(let value of values) {
-          sum += value;
-          i++;
-        }
-        return ( sum / i );
+    function lower3YearsQuantity() { //Функция вычисления количества сотрудников, чей стаж не превышает 3 года
+      let quantity = 0;
+      for (let value of values) {
+        if (value <= 3) quantity++;
       }
+      return quantity;
+    }
 
-      function lower3YearsQuantity() { //Функция вычисления количества сотрудников, чей стаж не превышает 3 года
-        let quantity = 0;
-        for(let value of values) {
-          if(value <= 3 ) quantity++;
-        }
-        return quantity;
+    function over20YearsQuantity() { //Функция вычисления количества сотрудников со стажем работы 20 лет и более. 
+      let quantity = 0;
+      for (let value of values) {
+        if (value >= 20) quantity++;
       }
+      return quantity;
+    }
+  </script>
+</body>
 
-      function  over20YearsQuantity() { //Функция вычисления количества сотрудников со стажем работы 20 лет и более. 
-        let quantity = 0;
-        for(let value of values) {
-          if(value >= 20) quantity++;
-        }
-        return quantity;
-      }
-    </script>
-  </body>
 </html>
