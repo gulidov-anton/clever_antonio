@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task2</title>
+</head>
+
+<body>
+  <script>
+    let birthDate = new Date(1948, 11, 3);//Определение ДР Ozzy и вывод название этого дня недели;
+    alert("День рождения (полный): " + birthDate);
+    switch (birthDate.getDay()) {
+      case 0:
+        alert("День рождения выпал на понедельник");
+        break;
+      case 1:
+        alert("День рождения выпал на вторник");
+        break;
+      case 2:
+        alert("День рождения выпал на среду");
+        break;
+      case 3:
+        alert("День рождения выпал на четверг");
+        break;
+      case 4:
+        alert("День рождения выпал на пятницу");
+        break;
+      case 5:
+        alert("День рождения выпал на субботу");
+        break;
+      default:
+        alert("День рождения выпал на воскресенье");
+    }
+
+    let birthDateThisYear = new Date(2020, 11, 3); //Вывод ДР Ozzy в этом году;
+    alert("День рождения в этом году (полный): " + birthDateThisYear);
+    switch (birthDateThisYear.getDay()) {
+      case 0:
+        alert("День рождения в этом году выпал на понедельник");
+        break;
+      case 1:
+        alert("День рождения в этом году выпал на вторник");
+        break;
+      case 2:
+        alert("День рождения в этом году выпал на среду");
+        break;
+      case 3:
+        alert("День рождения в этом году выпал на четверг");
+        break;
+      case 4:
+        alert("День рождения в этом году выпал на пятницу");
+        break;
+      case 5:
+        alert("День рождения выпал на субботу");
+        break;
+      default:
+        alert("День рождения выпал на воскресенье");
+    }
+
+    let today = new Date();
+    let ageNowInMilliseconds = today - birthDate; //Количество лет в миллисекундах;
+    let ageNowInSeconds = ageNowInMilliseconds / 1000; //Количество лет в секундах;
+    let dayInSeconds = 24 * 60 * 60 //Количество секунд в сутках (берём 24 часа * 60 минут * 60 секунд);
+    let ageDays = ageNowInSeconds / dayInSeconds; //Количество лет в днях;
+    let ageToday = ageDays / 360; //Вычисление количества лет Ozzy;
+    alert("Полных лет: " + ageToday.toFixed(1) + " лет\\года"); //Определение возраста OZZY на данный момент;
+
+    let birthDateThisYearInMilliseconds = Date.parse('2020-11-03'); //Определение даты ДР в миллисеекундах;
+    let todayInMilliseconds = Date.now(); //Определение сегодняшнего дня в миллисекундах;
+    let daysTillBirthdayInMilliseconds = birthDateThisYearInMilliseconds - todayInMilliseconds; //Вычисление сколько времени до ДР в миллисекундах;
+    let daysTillBirthdayInSeconds = daysTillBirthdayInMilliseconds / 1000; //Вычисление сколько времени до ДР в секундах;
+    let daysTillBirthdayInDays = daysTillBirthdayInSeconds / (60 * 60 * 24); //Вычисление сколько времени до ДР в днях;
+    alert("До дня рождения осталось: " + daysTillBirthdayInDays.toFixed(1) + " дней\\дня");
+  </script>
+</body>
+
+</html>

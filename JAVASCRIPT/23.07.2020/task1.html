@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+</head>
+
+<body>
+  <script>
+    let person = {// Создал объект, свойствами которого являются ф.и.о человека, его возраст и отметка о прохождении медосмотра (false или true);
+      name: "Adolf",
+      surname: "Hitler",
+      age: 45,
+      healthCheck: false,
+    }
+
+    let json = JSON.stringify(person);//Преобразование этого объекта в JSON-формат;
+    alert(json);
+
+    let obj = JSON.parse(json);//Преобразуйте JSON-строки обратно в обьект;
+    for (let key in obj) {//Вывод всех свойств нового бъекта и их значения;
+      alert("Выводим " + key + ': ' + obj[key]);
+    }
+  </script>
+</body>
+
+</html>

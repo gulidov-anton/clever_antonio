@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+
+<body>
+    <script>
+        let days = prompt("Введите кол-во дней"); 
+        let date = new Date();
+        alert("Дата сейчас: " + date);
+        let newDate = date.getDate() + parseInt(days); //Преобразование Date в целые числа и сложение их
+        date.setDate(newDate);
+        alert("Дата после сложения с введённым числом: " + date);
+    </script>
+</body>
+
+</html>
