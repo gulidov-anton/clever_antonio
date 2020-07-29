@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset = "UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Task1</title>
+  </head>
+  <body>
+    <script>
+      function makeWorker(name, surname, age) {
+        return {
+          name: name,
+          surname: surname,
+          age: age,
+        };
+      }
+
+      let sworker = [];
+      do {
+        name = prompt("Enter the worker's name");
+        surname = prompt("Enter the worker's surname");
+        age = prompt("Enter the worker's age");
+
+        for(let key of workers) {
+          workers[key] = makeWorker(name, surname, age);
+        } 
+      } while(true);
+
+      
+    </script>
+  </body>
+</html>
