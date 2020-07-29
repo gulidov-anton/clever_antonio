@@ -12,6 +12,7 @@
         let days = prompt("Введите кол-во дней"); 
         let date = new Date();
         alert("Дата сейчас: " + date);
+        
         let newDate = date.getDate() + parseInt(days); //Преобразование Date в целые числа и сложение их
         date.setDate(newDate);
         alert("Дата после сложения с введённым количеством дней: " + date);
