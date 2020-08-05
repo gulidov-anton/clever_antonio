@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+
+<body>
+    <script>
+        let start = Date.now();
+
+        for (let i = 0; i <= 1000000; i++) {
+            let sum = 0;
+            sum += i;
+        }
+
+        let end = Date.now();
+
+        alert("Цикл занял " + (end - start) / 1000 + " sec");//Определяет, сколько времени уйдет на вычисление суммы натуральных чисел от 1 до 1 000 000
+    </script>
+</body>
+
+</html>
