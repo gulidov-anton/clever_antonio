@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Задание3</title>
+</head>
+
+<body>
+    <input type="text" maxlength="5" name="textField">
+    <script>
+        let input = document.querySelector('input');
+        input.setAttribute("id", "button"); //Для элемента input задан значение DOM-свойства id = "button";
+        alert(button.hasAttribute("id")); //Проверка создания атрибута id;
+        alert(input.id); //Вывод значения атрибута id;
+
+        input.setAttribute("value", "Жми"); //Для элемента  input  задано значение DOM-свойства  value = "Жми"
+        alert(button.hasAttribute("value")); //Проверка создания атрибута value;
+        alert(input.getAttribute("value")); //Вывод значения атрибута value;
+
+        alert(input.getAttribute("maxlength")); //Вывод значение атрибута maxlength;
+
+        input.type = "button"; //Изменение значения атрибута type c "text" на "button";
+
+        input.setAttribute("onclick", "alert('Привет!!!')"); //Добавление атрибута 'onclick' со значением 'alert("Привет!!!")' в input
+
+        input.remove("maxlength"); //Удаление атрибута maxlength;
+    </script>
+</body>
+
+</html>

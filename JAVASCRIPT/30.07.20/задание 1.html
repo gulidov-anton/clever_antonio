@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Задание1</title>
+</head>
+
+<body>
+    <div id="div"> Не волнуйтесь, если что-то не работает. Если бы всё работало, вас бы уволили. </div>
+    <script>
+        alert(div.innerHTML); //Выводит только сообщение;
+        alert(div.outerHTML); //Выводит только сообщение + теги;
+
+        let div2 = document.createElement('div'); //Создание переменной div2 и присвоение ей нового div-элемента;
+        div2.className = "div2"; //Присвоение имени класса новому HTML-элементу;
+        div2.innerHTML = "<strong>Простота — залог надежности</strong>"; //Добавление содержимого в новый элемент;
+        document.body.append(div2); //Добавление нового элемента в DOM;
+    </script>
+</body>
+
+</html>
