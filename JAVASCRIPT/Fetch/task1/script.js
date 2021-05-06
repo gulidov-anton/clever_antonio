@@ -2,13 +2,16 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const submit = document.getElementById('submit');
 
-if (email.value.length == 0 && password.value.length == 0) {
-  submit.disabled = true;
+email.oninput = function() {
+  submit.disabled = false;
+}
+password.oninput = function() {
+  submit.disabled = false;
 }
 
 form.onsubmit = async (e) => {
   e.preventDefault();
-
+  
   try {
 
     const formData = new FormData(form);
