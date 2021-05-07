@@ -1,18 +1,17 @@
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const submit = document.getElementById('submit');
-
 const openSubmit = () => {
-  if (password.value.length !== 0 && email.value.length !== 0) {
-    submit.disabled = false;
+  let password = $('#password').val();
+  let email = $('#email').val();
+
+  if (password.length != 0 && email.length != 0) {
+    $('#submit').removeAttr('disabled');
   } else {
-    submit.disabled = true;
+    $('#submit').attr('disabled', 'disabled');
   }
 }
 
 form.onsubmit = async (e) => {
   e.preventDefault();
-  
+
   try {
 
     const formData = new FormData(form);
