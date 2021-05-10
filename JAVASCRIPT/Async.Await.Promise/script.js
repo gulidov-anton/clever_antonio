@@ -16,7 +16,7 @@ const getPost = async () => {
         }
         document.body.insertAdjacentHTML("beforeend", '<table><tr></tr></table>');
         data.forEach((item) =>
-            table.insertAdjacentHTML('beforeend', `<tr><td>${item.name}</td></tr>`)
+            table.insertAdjacentHTML('beforeend', `<tr><td contenteditable='true'>${item.name}</td></tr>`)
         );
     } catch (e) {
         console.log(e);
