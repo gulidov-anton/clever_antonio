@@ -4,7 +4,6 @@ const button = document.querySelector('#submit');
 const number = document.querySelector('#number');
 
 const getPost = async () => {
-	e.preventDefault();
     const url = 'https://jsonplaceholder.typicode.com/users';
     document.body.insertAdjacentHTML("beforeend", '<div class="load">LOADING...</div>');
 
