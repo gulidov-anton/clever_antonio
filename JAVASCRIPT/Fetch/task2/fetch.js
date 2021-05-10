@@ -4,6 +4,7 @@ const button = document.querySelector('#submit');
 const number = document.querySelector('#number');
 
 const getPost = async () => {
+	e.preventDefault();
     const url = 'https://jsonplaceholder.typicode.com/users';
     document.body.insertAdjacentHTML("beforeend", '<div class="load">LOADING...</div>');
 
@@ -12,7 +13,7 @@ const getPost = async () => {
         const data = await response.json();
         console.log(data);
         document.body.querySelector(".load").hidden = true;
-        data.foreEach( (item) =>
+        data.forEach( (item) =>
             document.body.insertAdjacentHTML('beforeend', `<div class="data">${item.name}</div>`)
         );
     } catch (e) {
