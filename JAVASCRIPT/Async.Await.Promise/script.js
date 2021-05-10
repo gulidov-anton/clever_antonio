@@ -1,6 +1,9 @@
+"use strict";
+
 const submit = document.querySelector('#submit');
 const button = document.querySelector('#button');
 const table = document.querySelector('#table');
+const form = document.querySelector("#form");
 
 const getPost = async () => {
     const url = 'https://jsonplaceholder.typicode.com/users';
@@ -12,9 +15,8 @@ const getPost = async () => {
         if (data) {
             document.body.querySelector("#no-data").hidden = true;
             document.body.querySelector(".load").hidden = true;
-            document.body.querySelector("#table").hidden = false;
+            table.hidden = false;
         }
-        document.body.insertAdjacentHTML("beforeend", '<table><tr></tr></table>');
         data.forEach((item) =>
             table.insertAdjacentHTML('beforeend', `<tr><td contenteditable='true'>${item.name}</td></tr>`)
         );
